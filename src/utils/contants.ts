@@ -34,3 +34,29 @@ export const procedures = [
     path: "/",
   },
 ];
+
+export const aboutLinkList1 = [
+  { title: "Link One", path: "/" },
+  {
+    title: "Link TWo",
+    path: "/",
+  },
+  { title: "Link Three", path: "/" },
+  {
+    title: "Link Four",
+    path: "/",
+  },
+];
+
+export const aboutLinkList2 = [
+  { title: "Link Five", path: "/" },
+  {
+    title: "Link Six",
+    path: "/",
+  },
+  { title: "Link Seven", path: "/" },
+  {
+    title: "Link Eight",
+    path: "/",
+  },
+];
