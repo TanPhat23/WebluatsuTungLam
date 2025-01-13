@@ -28,9 +28,9 @@ const About = (props: Props) => {
           alt="Group image"
         />
       </div>
-      <div className="flex flex-row gap-20">
+      <div className="flex flex-row gap-20 ">
         <div className="flex flex-col text-start">
-          <h2 className="text-4xl">PHƯƠNG PHÁP CỦA CHÚNG TÔI</h2>
+          <h2 className="text-4xl font-bold">PHƯƠNG PHÁP CỦA CHÚNG TÔI</h2>
           <div className="w-1/4 h-[5px] rounded-xl bg-[#122B12] "></div>
           <ul className="flex flex-col gap-2 mt-6">
             {aboutLinkList1.map((link) => (
@@ -42,8 +42,9 @@ const About = (props: Props) => {
             ))}
           </ul>
         </div>
+        <div className="w-[5px] h-auto rounded-xl bg-[#122B12] mt-16"></div>
         <div>
-          <h2 className="text-4xl">PHƯƠNG PHÁP CỦA CHÚNG TÔI</h2>
+          <h2 className="text-4xl font-bold">VẤN ĐỀ CHÚNG TÔI ĐẢM NHẬN</h2>
           <div className="w-1/4 h-[5px] rounded-xl bg-[#122B12] "></div>
           <ul className="flex flex-col gap-2 mt-6">
             {aboutLinkList2.map((link) => (
