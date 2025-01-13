@@ -6,7 +6,7 @@ type Props = {};
 
 const Home = (props: Props) => {
   return (
-    <div className="pageContainer gap-32">
+    <div className="flex flex-col gap-32 min-h-screen items-center">
       <div className="flex flex-col items-center text-center gap-4">
         <h2> CHÀO MỪNG QUÝ KHÁCH TỚI</h2>
         <h1 className="font-bold">VĂN PHÒNG LUẬT SƯ TÙNG LÂM</h1>
@@ -43,7 +43,6 @@ const Home = (props: Props) => {
         <h1>Short heading here</h1>
         <button className="text-white font-bold">ĐẶT LỊCH HẸN</button>
       </div>
-      <Footer/>
     </div>
   );
 };

@@ -16,7 +16,7 @@ function App() {
             alt="Logo"
             className="pointer-events-none object-contain h-auto w-auto"
           />
-          <div className="flex-col items-center mt-5">
+          <div className="flex-col items-center m-11">
             <h2 className="text-3xl">ĐOÀN LUẬT SƯ THÀNH PHỐ HỒ CHÍ MINH</h2>
             <p className="text-3xl font-bold text-center">
               VĂN PHÒNG LUẬT SƯ TÙNG LÂM
@@ -31,6 +31,7 @@ function App() {
           <Route path="/about" element={<About />} />
         </Routes>
       </div>
+      <Footer/>
     </>
   );
 }

@@ -8,3 +8,29 @@ export const links = [
   { title: "DỊCH VỤ KHÁC", path: "/services" },
   { title: "LIÊN HỆ", path: "/contact" },
 ];
+
+export const activities = [
+  { title: "Link One", path: "/" },
+  {
+    title: "Link TWo",
+    path: "/",
+  },
+  { title: "Link Three", path: "/" },
+  {
+    title: "Link Four",
+    path: "/",
+  },
+];
+
+export const procedures = [
+  { title: "Link Five", path: "/" },
+  {
+    title: "Link Six",
+    path: "/",
+  },
+  { title: "Link Seven", path: "/" },
+  {
+    title: "Link Eight",
+    path: "/",
+  },
+];
