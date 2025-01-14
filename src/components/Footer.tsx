@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="flex flex-row gap-4 justify-between ml-40 mr-40">
         <div>
           <img
-            src={"../public/logo.png"}
+            src={"./logo.png"}
             alt="Logo"
             className="h-[120px] m-2"
           />

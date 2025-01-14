@@ -9,5 +9,5 @@ export default defineConfig({
       plugins: [tailwindcss()],
     },
   },
-  base: "/webluatsu/",
+  // base: "/webluatsu/",
 });
