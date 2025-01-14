@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
 import { links } from "../utils/contants";
 
-type Props = {};
 
-const NavBar = (props: Props) => {
+const NavBar = () => {
   const storedSelectedLink = sessionStorage.getItem("selectedLink");
   const initialSelectedLink = storedSelectedLink
     ? parseInt(storedSelectedLink, 10)

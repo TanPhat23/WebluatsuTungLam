@@ -1,14 +1,12 @@
-import React from "react";
 import Carousel from "../components/Carousel";
 import { aboutLinkList1, aboutLinkList2 } from "../utils/contants";
 
-type Props = {};
 
 const images = ["../../public/house.jpg", "../../public/house.jpg"];
 
-const About = (props: Props) => {
+const About = () => {
   return (
-    <div className="flex flex-col gap-16 min-h-screen items-center text-center">
+    <div className="flex flex-col gap-16 min-h-screen items-center text-center ml-5">
       <div className="flex flex-col items-center text-center gap-4 mt-16">
         <h1 className="font-bold">VỀ VĂN PHÒNG LUẬT SƯ TÙNG LÂM</h1>
         <div className="w-1/2 h-[10px] rounded-xl bg-[#122B12] "></div>

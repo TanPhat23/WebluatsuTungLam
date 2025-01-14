@@ -5,7 +5,7 @@ export const links = [
   { title: "LUẬT SƯ CỘNG SỰ", path: "/lawyer" },
   { title: "THỦ TỤC PHÁP LÝ", path: "/procedure" },
   { title: "TÌM HIỂU PHÁP LUẬT", path: "/law" },
-  { title: "DỊCH VỤ KHÁC", path: "/services" },
+  { title: "DỊCH VỤ TỔNG QUÁT", path: "/services" },
   { title: "LIÊN HỆ", path: "/contact" },
 ];
 
@@ -46,9 +46,29 @@ export const aboutLinkList1 = [
     title: "Link Four",
     path: "/",
   },
+  { title: "Link Five", path: "/" },
+  {
+    title: "Link Six",
+    path: "/",
+  },
+  { title: "Link Seven", path: "/" },
+  {
+    title: "Link Eight",
+    path: "/",
+  },
 ];
 
 export const aboutLinkList2 = [
+  { title: "Link One", path: "/" },
+  {
+    title: "Link TWo",
+    path: "/",
+  },
+  { title: "Link Three", path: "/" },
+  {
+    title: "Link Four",
+    path: "/",
+  },
   { title: "Link Five", path: "/" },
   {
     title: "Link Six",

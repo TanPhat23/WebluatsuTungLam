@@ -1,14 +1,15 @@
-import React from "react";
 import { activities, procedures } from "../utils/contants";
 
-type Props = {};
-
-const Footer = (props: Props) => {
+const Footer = () => {
   return (
-    <footer className="h-[350px] bg-[#B1BC55] w-screen mt-20 flex-row ">
+    <footer className="h-[350px] md:h-[400px] bg-[#B1BC55] w-screen mt-20 flex-row ">
       <div className="flex flex-row gap-4 justify-between ml-40 mr-40">
         <div>
-          <img src={"../public/logo.png"} alt="Logo" className="h-[120px]" />
+          <img
+            src={"../public/logo.png"}
+            alt="Logo"
+            className="h-[120px] m-2"
+          />
           <p>
             <span className="font-semibold">Địa chỉ: </span>
             399 Bình Lợi, phường 13, Quận Bình Thạnh, Thành phố Hồ Chí Minh.

@@ -1,10 +1,6 @@
-import React from "react";
 import "../App.css";
-import Footer from "../components/Footer";
 
-type Props = {};
-
-const Home = (props: Props) => {
+const Home = () => {
   return (
     <div className="flex flex-col gap-32 min-h-screen items-center">
       <div className="flex flex-col items-center text-center gap-4 mt-6">
