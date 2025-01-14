@@ -1,8 +1,4 @@
-import React from "react";
-
-type Props = {};
-
-const Banner = (props: Props) => {
+const Banner = () => {
   return (
     <div className="flex justify-center h-[200px] bg-[#B1BC55] gap-4">
       <img
