@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { links } from "../utils/contants";
 
-
 const NavBar = () => {
   const storedSelectedLink = sessionStorage.getItem("selectedLink");
   const initialSelectedLink = storedSelectedLink
@@ -17,13 +16,21 @@ const NavBar = () => {
     <nav className="h-[90px] mt-4">
       <ul className="flex flex-row gap-12 justify-center">
         {links.map((link, index) => (
-          <li key={index} className="relative">
+          <li key={index} className="relative font-bold">
             <a
               href={link.path}
-              className="w-[120px] h-auto inline-block p-0 text-center font-semibold"
+              className={`w-auto h-auto inline-block text-center font-semibold ${
+                selectedLink === index ? "text-green-600" : "text-gray-800"
+              }`}
               onClick={() => setSelectedLink(index)}
+              aria-current={selectedLink === index ? "page" : undefined}
             >
-              {link.title}
+              <span className="block">
+                {link.title.split(" ").slice(0, 2).join(" ")}
+              </span>
+              <span className="block">
+                {link.title.split(" ").slice(2).join(" ")}
+              </span>
             </a>
             {selectedLink === index && (
               <div className="w-full h-[4px] rounded-xl bg-[#122B12]" />

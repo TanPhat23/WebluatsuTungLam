@@ -3,7 +3,7 @@ import "../App.css";
 const Home = () => {
   return (
     <div className="flex flex-col gap-32 min-h-screen items-center">
-      <div className="flex flex-col items-center text-center gap-4 mt-6">
+      <div className="flex flex-col items-center text-center gap-4 mt-6 font-semibold">
         <h2> CHÀO MỪNG QUÝ KHÁCH TỚI</h2>
         <h1 className="font-bold">VĂN PHÒNG LUẬT SƯ TÙNG LÂM</h1>
         <div className="w-1/2 h-[10px] rounded-xl bg-[#122B12] "></div>
