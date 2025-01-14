@@ -26,7 +26,7 @@ const NavBar = () => {
               {link.title}
             </a>
             {selectedLink === index && (
-              <div className="absolute bottom-0 left-0 w-full h-[4px] rounded-xl bg-[#122B12]" />
+              <div className="w-full h-[4px] rounded-xl bg-[#122B12]" />
             )}
           </li>
         ))}

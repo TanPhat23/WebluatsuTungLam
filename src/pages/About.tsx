@@ -1,8 +1,7 @@
 import Carousel from "../components/Carousel";
 import { aboutLinkList1, aboutLinkList2 } from "../utils/contants";
 
-
-const images = ["../../public/house.jpg", "../../public/house.jpg"];
+const images = ["./house.jpg", "./house.jpg"];
 
 const About = () => {
   return (
@@ -21,7 +20,7 @@ const About = () => {
       <div className="flex flex-col justify-center items-center gap-4">
         <h1>Long heading is what you see here in this feature section</h1>
         <img
-          src="../../public/groupimageDemo.jpg"
+          src="./groupimageDemo.jpg"
           className="w-[600px] h-[400px] object-cover"
           alt="Group image"
         />
