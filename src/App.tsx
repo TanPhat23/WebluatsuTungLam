@@ -5,20 +5,22 @@ import About from "./pages/About";
 import "./App.css";
 import Footer from "./components/Footer";
 import Banner from "./components/Banner";
+import Team from "./pages/Team";
+import Member from "./pages/Member";
 
 function App() {
   return (
     <>
       <Banner />
-      <div className="w-screen justify-center">
-        <hr />
-        <NavBar />
-        <hr />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-        </Routes>
-      </div>
+      <hr />
+      <NavBar />
+      <hr />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/team" element={<Team />} />
+        <Route path="/team/:id" element={<Member />} />
+      </Routes>
       <Footer />
     </>
   );

@@ -2,7 +2,7 @@ const Banner = () => {
   return (
     <div className="flex justify-center h-[200px] bg-[#B1BC55]">
       <img
-        src={"./logo.png"}
+        src={"/logo.png"}
         alt="Logo"
         className="pointer-events-none object-contain h-[150px] w-[150px] mt-4"
       />

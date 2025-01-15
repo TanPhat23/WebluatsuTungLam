@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { links } from "../utils/contants";
+import { links } from "../utils/constants";
 
 const NavBar = () => {
   const storedSelectedLink = sessionStorage.getItem("selectedLink");

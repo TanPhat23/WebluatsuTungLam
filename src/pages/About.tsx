@@ -1,5 +1,5 @@
 import Carousel from "../components/Carousel";
-import { aboutLinkList1, aboutLinkList2 } from "../utils/contants";
+import { aboutLinkList1, aboutLinkList2 } from "../utils/constants";
 
 const images = ["./house.jpg", "./house.jpg"];
 
