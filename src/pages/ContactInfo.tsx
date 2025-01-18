@@ -64,7 +64,7 @@ const ContactInfo = () => {
       });
       return false;
     }
-    if (phone.toString().length !== 10 || isNaN(Number(phone))) {
+    if (phone.toString().length !== 10 || !Number(phone)) {
       toast("Số điện thoại không hợp lệ", {
         theme: "dark",
         type: "error",
