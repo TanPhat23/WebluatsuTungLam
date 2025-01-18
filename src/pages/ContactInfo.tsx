@@ -6,7 +6,7 @@ import { toast, ToastContainer } from "react-toastify";
 const ContactInfo = () => {
   const [sendingMail, setSendingMail] = useState(false);
   const [name, setName] = useState<string>("");
-  const [phone, setPhone] = useState<number>(0);
+  const [phone, setPhone] = useState<string>("");
   const [email, setEmail] = useState<string>("");
   const [message, setMessage] = useState<string>("");
 
@@ -38,7 +38,7 @@ const ContactInfo = () => {
           setName("");
           setEmail("");
           setMessage("");
-          setPhone(0);
+          setPhone("");
         },
         (error) => {
           toast("Gửi mail không thành công " + error, {
@@ -144,10 +144,9 @@ const ContactInfo = () => {
                     type="number"
                     id="phone"
                     className="w-full px-3 py-2 border rounded-lg bg-white"
-                    value={phone === 0 ? "" : phone}
+                    value={phone}
                     onChange={(e) => {
-                      const value = e.target.value;
-                      setPhone(value ? parseInt(e.target.value, 10) : 0);
+                      setPhone(e.target.value);
                     }}
                   />
                 </div>
