@@ -1,14 +1,41 @@
 import { useEffect, useState } from "react";
 import { AiOutlineLoading } from "react-icons/ai";
+import emailjs from "@emailjs/browser";
 
 const ContactInfo = () => {
   const [sendingMail, setSendingMail] = useState(false);
 
-  const handleSendMail = () => {
+  const handleSendMail = (e: React.FormEvent) => {
+    e.preventDefault();
     setSendingMail(true);
+    const form ={
+      from_name : (document.getElementById("name") as HTMLInputElement).value,
+      email : (document.getElementById("email")as HTMLInputElement).value,
+      phone : (document.getElementById("phone")as HTMLInputElement).value,
+      message : (document.getElementById("message")as HTMLInputElement).value,
+    }
+    emailjs
+    .send(import.meta.env.VITE_EMAILJS_SERVICE_ID, 
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID, 
+      form,
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+    )
+    .then(
+      (res) => {
+        alert("Đã gửi email thành công ")
+        console.log("Success",res.status)
+        setSendingMail(false)
+      },
+      (error) => {
+        alert("Gửi email không thành công ")
+        console.error("Gửi mail không thành công", error);
+        setSendingMail(false);
+      }
+    );
   };
 
   useEffect(() => {
+    emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY)
     if (sendingMail) {
       setTimeout(() => setSendingMail(false), 1000);
     }
