@@ -13,7 +13,7 @@ const ContactInfo = () => {
   const handleSendMail = (e: React.FormEvent) => {
     e.preventDefault();
     setSendingMail(true);
-    if (!CheckInput) return;
+    if (!CheckInput()) return;
 
     const form = {
       from_name: name,
@@ -21,6 +21,7 @@ const ContactInfo = () => {
       phone: phone,
       message: message,
     };
+
     emailjs
       .send(
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
@@ -49,22 +50,22 @@ const ContactInfo = () => {
   };
 
   const CheckInput = (): boolean => {
-    if (
-      name === "" ||
-      phone === 0 ||
-      email === "" ||
-      message === "" ||
-      phone.toString().length !== 10
-    ) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (name.trim() === "" || email.trim() === "" || message.trim() === "") {
       toast("Vui lòng nhập đầy đủ thông tin", {
         theme: "dark",
         type: "error",
       });
       return false;
-    }
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
+    } else if (!emailRegex.test(email)) {
       toast("Địa chỉ email không hợp lệ", {
+        theme: "dark",
+        type: "error",
+      });
+      return false;
+    }
+    if (phone.toString().length !== 10 || isNaN(Number(phone))) {
+      toast("Số điện thoại không hợp lệ", {
         theme: "dark",
         type: "error",
       });
@@ -72,7 +73,7 @@ const ContactInfo = () => {
     }
     return true;
   };
-  
+
   useEffect(() => {
     if (sendingMail) {
       setTimeout(() => setSendingMail(false), 2000);
