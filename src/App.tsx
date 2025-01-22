@@ -5,9 +5,10 @@ import About from "./pages/About";
 import "./App.css";
 import Footer from "./components/Footer";
 import Banner from "./components/Banner";
-import Team from "./pages/Team";
-import Member from "./pages/Member";
+import Team from "./pages/team/Team";
+import Member from "./pages/team/Member";
 import ContactInfo from "./pages/ContactInfo";
+import Activities from "./pages/activities/Activities";
 
 function App() {
   return (
@@ -19,9 +20,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/activities" element={<Activities />} />
         <Route path="/team" element={<Team />} />
         <Route path="/team/:id" element={<Member />} />
-        <Route path="/contact" element={<ContactInfo/>} />
+        <Route path="/contact" element={<ContactInfo />} />
       </Routes>
       <Footer />
     </>

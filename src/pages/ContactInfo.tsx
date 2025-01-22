@@ -83,7 +83,7 @@ const ContactInfo = () => {
   return (
     <>
       <ToastContainer closeButton position="top-center" />
-      <div className="flex flex-col gap-16 min-h-screen items-center text-center ml-5">
+      <div className="flex flex-col gap-16 min-h-screen items-center text-center m-x-5">
         <div className="flex flex-col items-center text-center gap-4 mt-16">
           <h1 className="font-bold text-4xl">Liên Hệ </h1>
           <p className="text-xl">

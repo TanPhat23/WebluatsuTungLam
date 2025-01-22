@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
-import { members } from "../utils/constants";
-import NotFound from "../components/NotFound";
-import BioContainer from "../components/BioContainer";
+import { members } from "../../utils/constants";
+import NotFound from "../../components/NotFound";
+import BioContainer from "../../components/BioContainer";
 
 const Member = () => {
   const { id } = useParams<{ id: string }>();
@@ -32,8 +32,11 @@ const Member = () => {
         <BioContainer name={"LĨNH VỰC CHUYÊN MÔN"} content={member.lvhd} />
         <BioContainer name={"TRÌNH ĐỘ HỌC VẤN"} content={member.lvhd} />
         <BioContainer name={"CHỨNG CHỈ HÀNH NGHỀ"} content={member.lvhd} />
-        <BioContainer name={"NƠI TỪNG THAM GIA CÔNG TÁC"} content={member.lvhd} />
-        <hr className="mt-16"/>
+        <BioContainer
+          name={"NƠI TỪNG THAM GIA CÔNG TÁC"}
+          content={member.lvhd}
+        />
+        <hr className="mt-16" />
       </div>
     </div>
   );

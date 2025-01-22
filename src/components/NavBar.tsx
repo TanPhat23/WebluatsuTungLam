@@ -16,10 +16,10 @@ const NavBar = () => {
     <nav className="h-[90px] mt-4">
       <ul className="flex flex-row gap-12 justify-center">
         {links.map((link, index) => (
-          <li key={index} className="relative font-bold">
+          <li key={index} className="relative font-bold ">
             <a
               href={link.path}
-              className={`w-auto h-auto inline-block text-center font-semibold ${
+              className={`w-auto h-auto inline-block text-center font-semibold transition-colors duration-1000 ease-in-out ${
                 selectedLink === index ? "text-green-600" : "text-gray-800"
               }`}
               onClick={() => setSelectedLink(index)}
@@ -33,7 +33,7 @@ const NavBar = () => {
               </span>
             </a>
             {selectedLink === index && (
-              <div className="w-full h-[4px] rounded-xl bg-[#122B12]" />
+              <div className="w-full h-[4px] rounded-xl bg-[#122B12] transition-all duration-1000 ease-in-out" />
             )}
           </li>
         ))}

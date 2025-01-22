@@ -14,7 +14,9 @@ const Home = () => {
           <p>text</p>
           <h1>title</h1>
           <p>Description</p>
-          <button className="text-white">button</button>
+          <button className="transition text-white hover:ease-in duration-200 hover:scale-110">
+            button
+          </button>
         </div>
       </div>
       <div className="flex flex-row gap-4">
@@ -22,7 +24,9 @@ const Home = () => {
           <p>text</p>
           <h1>title</h1>
           <p>Description</p>
-          <button className="text-white">button</button>
+          <button className="transition text-white hover:ease-in duration-200 hover:scale-110">
+            button
+          </button>
         </div>
         <div>images</div>
       </div>
@@ -32,7 +36,9 @@ const Home = () => {
           <p>text</p>
           <h1>title</h1>
           <p>Description</p>
-          <button className="text-white">button</button>
+          <button className="transition text-white hover:ease-in duration-200 hover:scale-110">
+            button
+          </button>
         </div>
       </div>
       <div className="flex flex-col items-center text-center gap-4 font-bold">

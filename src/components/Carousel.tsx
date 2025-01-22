@@ -9,8 +9,8 @@ type Props = {
 
 const Carousel = ({
   images,
-  autoSlide = false,
-  autoSlideInterval = 3000,
+  autoSlide = true,
+  autoSlideInterval = 5000,
 }: Props) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -40,14 +40,14 @@ const Carousel = ({
           {images.map((image, index) => (
             <div
               key={index}
-              className={`absolute inset-0 transition-transform transform ${
+              className={`absolute inset-0 transition-transform transform duration-500 ${
                 index === currentIndex ? "translate-x-0" : "translate-x-full"
               }`}
             >
               <img
                 src={image}
                 alt={`Slide ${index}`}
-                className="w-full h-full object-cover rounded-xl"
+                className="w-full h-full object-cover rounded-xl right-9"
               />
             </div>
           ))}

@@ -1,4 +1,4 @@
-import { members } from "../utils/constants";
+import { members } from "../../utils/constants";
 
 const Team = () => {
   let n = members.length;
