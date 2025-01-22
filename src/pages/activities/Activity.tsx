@@ -13,8 +13,12 @@ const Activity = () => {
     let index: number;
     index = activitiesCard.findIndex((activity) => activity.href.match(id));
     activity = activitiesCard[index];
+
+    const start = Math.max(0, index - 2);
+    const end = start + 5;
+
     listActivity = activitiesCard
-      .slice(Math.max(0, index - 2), Math.min(activitiesCard.length, index + 5))
+      .slice(start, end)
       .filter((item) => item.href !== id);
   }
   if (!activity) return <NotFound message="Không tìm thấy hoạt động" />;
@@ -48,11 +52,14 @@ const Activity = () => {
       <div className="flex flex-wrap justify-center gap-8 mt-8">
         {listActivity.map((activity) => (
           <a
+            key={activity.href}
             onClick={() => navigate(`/activities/${activity.href}`)}
             content={activity.description}
             className="transition ease-in hover:cursor-pointer bg-black text-white min-h-16 min-w-32 flex justify-center text-center items-center rounded-xl px-2 hover:scale-110 duration-500"
           >
-            {activity.title}
+            {activity.title.split(" ").length < 3
+              ? activity.title
+              : activity.title.split(" ").slice(0, 2).join(" ") + " ..."}
           </a>
         ))}
       </div>
