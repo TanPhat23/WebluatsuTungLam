@@ -11,7 +11,7 @@ const Member = () => {
   }
 
   if (!member) {
-    return <NotFound />;
+    return <NotFound message="Không tìm thấy luật sư hoặc cộng sự"/>;
   }
 
   return (

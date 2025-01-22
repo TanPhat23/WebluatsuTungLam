@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { activitiesButtons, activitiesCard } from "../../utils/constants";
-import ActivityCard from "../../components/ActivityCard";
+import ActivityCard from "../../components/activity/ActivityCard";
 
 const Activities = () => {
   const [selectedButton, setSelectedButton] = useState(0);
@@ -42,10 +42,10 @@ const Activities = () => {
       </ul>
       <ul className="grid sm:grid-cols-1 md:grid-cols-2 gap-12 justify-center items-center justify-items-center">
         {activitiesCard
-          .filter((act) => act.key === selectedActivity)
-          .map((act) => (
-            <li key={act.title} className="flex flex-col items-center">
-              <ActivityCard name={act.title} content={act.description} />
+          .filter((activity) => activity.key === selectedActivity)
+          .map((activity) => (
+            <li key={activity.title} className="flex flex-col items-center">
+              <ActivityCard activity={activity} />
             </li>
           ))}
       </ul>
