@@ -259,6 +259,7 @@ export const activitiesCard: Activity[] = [
     commonProblem: "",
     legalServices: "",
   },
+  //Tham gia tố tụng
   {
     key: "tgtt",
     href: "tgtt",
@@ -269,6 +270,7 @@ export const activitiesCard: Activity[] = [
     commonProblem: "",
     legalServices: "",
   },
+  //Đại diện ủy quyền
   {
     key: "dduq",
     href: "dduq",
@@ -279,6 +281,7 @@ export const activitiesCard: Activity[] = [
     commonProblem: "",
     legalServices: "",
   },
+  //Dịch vụ pháp luật
   {
     key: "dvpl",
     href: "dvpl",
