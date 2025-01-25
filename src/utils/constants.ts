@@ -6,7 +6,7 @@ export const links = [
   { title: "HOẠT ĐỘNG HÀNH NGHỀ", path: "/activities" },
   { title: "LUẬT SƯ CỘNG SỰ", path: "/team" },
   { title: "THỦ TỤC PHÁP LÝ", path: "/procedure" },
-  { title: "TÌM HIỂU PHÁP LUẬT", path: "/law" },
+  { title: "TÌM HIỂU PHÁP LUẬT", path: "/laws" },
   { title: "DỊCH VỤ TỔNG QUÁT", path: "/services" },
   { title: "LIÊN HỆ", path: "/contact" },
 ];
@@ -293,4 +293,3 @@ export const activitiesCard: Activity[] = [
     legalServices: "",
   },
 ];
-

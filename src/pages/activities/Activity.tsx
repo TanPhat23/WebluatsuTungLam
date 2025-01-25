@@ -20,14 +20,14 @@ const Activity = () => {
     listActivity = activitiesCard
       .slice(start, end)
       .filter((item) => item.href !== id);
-  }
+  }   ``
   if (!activity) return <NotFound message="Không tìm thấy hoạt động" />;
 
   return (
     <div className="flex flex-col gap-16 min-h-screen items-center text-center mx-16">
       <div className="flex flex-col items-center text-center gap-4 mt-6 font-semibold">
         <h2>VỀ DỊCH VỤ TẠI</h2>
-        <h1 className="font-bold">VĂN PHÒNG LUẬT SƯ TÙNG LÂM</h1>
+        <h1 className="font-bold">{activity.title}</h1>
         <div className="w-1/2 h-[10px] rounded-xl bg-[#122B12]"></div>
       </div>
       <div className="flex flex-col items-start text-start justify-start w-full gap-32 mt-16">

@@ -18,7 +18,7 @@ const ActivityCard = ({ activity }: Props) => {
             window.scrollTo(0, 0);
             navigate(`/activities/${activity.href}`);
           }}
-          className="bg-white text-black mt-8 w-[150px] h-[70px] flex items-center justify-center rounded-xl"
+          className="bg-white text-black mt-8 w-[150px] h-[70px] flex items-center justify-center rounded-xl hover:cursor-pointer"
         >
           Tìm hiểu thêm
         </a>
