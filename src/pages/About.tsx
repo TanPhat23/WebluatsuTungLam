@@ -8,7 +8,7 @@ const About = () => {
     <div className="flex flex-col gap-16 min-h-screen items-center text-center m-x-5">
       <div className="flex flex-col items-center text-center gap-4 mt-16">
         <h1 className="font-bold">VỀ VĂN PHÒNG LUẬT SƯ TÙNG LÂM</h1>
-        <div className="w-1/2 h-[10px] rounded-xl bg-[#122B12] "></div>
+        <div className="w-1/2 h-[10px] rounded-xl bg-[#0052A2] "></div>
       </div>
       <Carousel images={images} />
       <div className="flex flex-col items-center text-center gap-4 mt-6">

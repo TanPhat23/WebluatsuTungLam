@@ -592,30 +592,30 @@ export const laws = [
 export const index = [
   {
     id: "1",
-    title: "MỤC 1",
+    title: "ÁN LỆ",
   },
   {
     id: "2",
-    title: "MỤC 2",
+    title: "NGHỊ QUYẾT",
   },
-  {
-    id: "3",
-    title: "MỤC 3",
-  },
-  {
-    id: "4",
-    title: "MỤC 4",
-  },
-  {
-    id: "5",
-    title: "MỤC 5",
-  },
-  {
-    id: "6",
-    title: "MỤC 6",
-  },
-  {
-    id: "7",
-    title: "MỤC 7",
-  },
+  // {
+  //   id: "3",
+  //   title: "MỤC 3",
+  // },
+  // {
+  //   id: "4",
+  //   title: "MỤC 4",
+  // },
+  // {
+  //   id: "5",
+  //   title: "MỤC 5",
+  // },
+  // {
+  //   id: "6",
+  //   title: "MỤC 6",
+  // },
+  // {
+  //   id: "7",
+  //   title: "MỤC 7",
+  // },
 ];

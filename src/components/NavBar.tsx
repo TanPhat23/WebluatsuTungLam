@@ -37,7 +37,7 @@ const NavBar = () => {
               </span>
             </a>
             {selectedLink === index && (
-              <div className="w-full h-[4px] rounded-xl bg-[#122B12] transition duration-1000 ease-linear " />
+              <div className="w-full h-[4px] rounded-xl bg-[#0052A2] transition duration-1000 ease-linear " />
             )}
           </li>
         ))}
