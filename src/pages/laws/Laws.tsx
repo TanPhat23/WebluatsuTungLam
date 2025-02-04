@@ -3,7 +3,6 @@ import { index, laws } from "../../utils/laws";
 import { FaMagnifyingGlass } from "react-icons/fa6";
 import LawCard from "../../components/law/LawCard";
 
-
 const Laws = () => {
   const [selectedIndex, setSelectedIndex] = React.useState(0);
   const [loading, setLoading] = React.useState(false);
@@ -74,7 +73,64 @@ const Laws = () => {
       </div>
       <div className="flex flex-col items-center text-center gap-4 font-bold">
         <h1>Short heading here</h1>
-        <button className="text-black bg-white border-2 border-[#064273] font-bold">ĐẶT LỊCH HẸN</button>
+        <button className="text-black bg-white border-2 border-[#064273] font-bold">
+          ĐẶT LỊCH HẸN
+        </button>
+      </div>
+      <div className="flex gap-2">
+        {selectedIndex !== 0 && (
+          <button
+            onClick={() => handleIndexClick(selectedIndex - 1)}
+            className="bg-white"
+          >
+            {"<"}
+          </button>
+        )}
+        <ul className="flex gap-2">
+          {Array.from({ length: Math.ceil(laws.length / 9) }, (_, i) => i)
+            .reduce((acc, i, _, arr) => {
+              const lastPage = arr.length - 1;
+
+              if (
+                i < 1 ||
+                i === lastPage ||
+                i === selectedIndex ||
+                i === selectedIndex - 1 ||
+                i === selectedIndex + 1
+              ) {
+                acc.push(i);
+              } else if (acc[acc.length - 1] !== "...") {
+                acc.push("...");
+              }
+              return acc;
+            }, [] as (number | string)[])
+            .map((i, idx) => (
+              <li key={idx}>
+                {i === "..." ? (
+                  <span>...</span>
+                ) : (
+                  <button
+                    onClick={() => handleIndexClick(i as number)}
+                    className={`${
+                      selectedIndex === i
+                        ? "bg-[#0052A2] text-white"
+                        : "bg-white"
+                    }`}
+                  >
+                    {(i as number) + 1}
+                  </button>
+                )}
+              </li>
+            ))}
+        </ul>
+        {selectedIndex < Math.ceil(laws.length / 9) - 1 && (
+          <button
+            onClick={() => handleIndexClick(selectedIndex + 1)}
+            className="bg-white"
+          >
+            {">"}
+          </button>
+        )}
       </div>
     </div>
   );
