@@ -63,8 +63,8 @@ const Laws = () => {
               return item.title.toLowerCase().includes(search.toLowerCase());
             }
             return (
-              parseInt(item.id) <= 9 * (selectedIndex + 1) &&
-              parseInt(item.id) > 9 * selectedIndex
+              parseInt(item.id) <= 12 * (selectedIndex + 1) &&
+              parseInt(item.id) > 12 * selectedIndex
             );
           })
           .map((item, index) => (
@@ -87,7 +87,7 @@ const Laws = () => {
           </button>
         )}
         <ul className="flex gap-2">
-          {Array.from({ length: Math.ceil(laws.length / 9) }, (_, i) => i)
+          {Array.from({ length: Math.ceil(laws.length / 12) }, (_, i) => i)
             .reduce((acc, i, _, arr) => {
               const lastPage = arr.length - 1;
 
@@ -123,7 +123,7 @@ const Laws = () => {
               </li>
             ))}
         </ul>
-        {selectedIndex < Math.ceil(laws.length / 9) - 1 && (
+        {selectedIndex < Math.ceil(laws.length / 12) - 1 && (
           <button
             onClick={() => handleIndexClick(selectedIndex + 1)}
             className="bg-white"

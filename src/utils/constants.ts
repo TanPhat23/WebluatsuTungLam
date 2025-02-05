@@ -5,7 +5,7 @@ export const links = [
   { title: "GIỚI THIỆU", path: "/about" },
   { title: "HOẠT ĐỘNG HÀNH NGHỀ", path: "/activities" },
   { title: "LUẬT SƯ CỘNG SỰ", path: "/team" },
-  { title: "THỦ TỤC PHÁP LÝ", path: "/procedure" },
+  { title: "THỦ TỤC PHÁP LÝ", path: "/procedures" },
   { title: "TÌM HIỂU PHÁP LUẬT", path: "/laws" },
   { title: "DỊCH VỤ TỔNG QUÁT", path: "/services" },
   { title: "LIÊN HỆ", path: "/contact" },
