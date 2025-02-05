@@ -315,16 +315,6 @@ export const activitiesCard: Activity[] = [
   {
     key: "dvpl",
     href: "dvpl",
-    title: "Dịch vụ pháp luật",
-    description: "Cung cấp các dịch vụ liên quan đến pháp luật.",
-    summary: "",
-    keyContent: "",
-    commonProblem: "",
-    legalServices: "",
-  },
-  {
-    key: "dvpl",
-    href: "dvpl",
     title: "Soạn thảo văn bản",
     description: "Cung cấp các dịch vụ liên quan đến pháp luật.",
     summary: "",
