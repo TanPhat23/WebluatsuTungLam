@@ -3,7 +3,7 @@ import { procedureButtons, procedures } from "../../utils/procedures";
 
 const Procedures = () => {
   const [selectedIndex, setSelectedIndex] = React.useState(0);
-  const [underline, setUnderline] = React.useState(false);
+  const [hoverIndex, setHoverIndex] = React.useState<number | null>(null);
   const [loading, setLoading] = React.useState(false);
   const handleIndexClick = (index: number) => {
     setLoading(true);
@@ -55,15 +55,15 @@ const Procedures = () => {
         >
           {procedures
             .filter((procedure) => selectedIndex === procedure.id - 1)
-            .map((procedure) => (
+            .map((procedure, index) => (
               <li key={procedure.title} className="">
                 <button
                   className="bg-white rounded-xl border-[#0052A2] w-[420px] h-[200px] text-xl font-bold shadow-2xl hover:text-blue-400 flex flex-col justify-center items-center"
-                  onMouseEnter={() => setUnderline(true)}
-                  onMouseLeave={() => setUnderline(false)}
+                  onMouseEnter={() => setHoverIndex(index)}
+                  onMouseLeave={() => setHoverIndex(null)}
                 >
                   {procedure.title}
-                  {underline && (
+                  {hoverIndex === index && (
                     <div className="w-1/4 h-[4px] rounded-xl bg-[#0052A2] "></div>
                   )}
                 </button>
