@@ -14,9 +14,9 @@ const ActivityCard = ({ activity }: Props) => {
         navigate(`/activities/${activity.href}`);
       }}
     >
-      <div className="flex m-3 flex-col justify-center items-center h-[170px] group ">
+      <div className="flex m-3 flex-col justify-center items-center h-[170px] ">
         <h2 className="font-bold text-3xl ">{activity.title}</h2>
-        <div className="w-1/4 h-[4px] mt-2 rounded-xl bg-[#0052A2] transition ease-in duration-300 opacity-0 group-hover:opacity-100 "></div>
+        <div className="w-1/4 h-[4px] mt-2 rounded-xl bg-[#0052A2] transition ease-in duration-300 "></div>
         {/* <p className="mt-4 min-h-16 text-start">{activity.description}</p>  */}
       </div>
     </div>
