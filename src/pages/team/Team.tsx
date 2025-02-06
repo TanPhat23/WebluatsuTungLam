@@ -25,7 +25,7 @@ const Team = () => {
       </div>
       <div className="flex flex-col items-center text-center gap-4 font-bold">
         <h1>Short heading here</h1>
-        <button className="text-white font-bold">ĐẶT LỊCH HẸN</button>
+        <button className="text-black bg-white border-2 border-[#064273] font-bold">ĐẶT LỊCH HẸN</button>
       </div>
     </div>
   );
