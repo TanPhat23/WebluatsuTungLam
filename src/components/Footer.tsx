@@ -2,7 +2,7 @@ import { activities, procedures } from "../utils/constants";
 
 const Footer = () => {
   return (
-    <footer className="h-[350px] md:h-[400px] bg-[#B1BC55] w-screen mt-20 flex-row ">
+    <footer className="h-[350px] md:h-[400px] bg-[#82C8E5] w-screen mt-20 flex-row ">
       <div className="flex flex-row gap-4 justify-between ml-40 mr-40">
         <div>
           <img src={"/logo.png"} alt="Logo" className="h-[120px] m-2" />

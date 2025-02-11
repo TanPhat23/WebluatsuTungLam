@@ -1,6 +1,6 @@
 const Banner = () => {
   return (
-    <div className="flex justify-center h-[200px] bg-[#B1BC55]">
+    <div className="flex justify-center h-[200px] bg-[#82C8E5]">
       <img
         src={"/logo.png"}
         alt="Logo"
