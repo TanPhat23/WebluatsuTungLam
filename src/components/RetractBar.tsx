@@ -1,9 +1,7 @@
 import React from "react";
 import { RetractBarConst } from "../utils/constants";
 
-type Props = {};
-
-const RetractBar = (props: Props) => {
+const RetractBar = () => {
   const [isRetract, setIsRetract] = React.useState(false);
 
   return (
