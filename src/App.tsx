@@ -13,6 +13,9 @@ import Activity from "./pages/activities/Activity";
 import Law from "./pages/laws/Law";
 import Laws from "./pages/laws/Laws";
 import Procedures from "./pages/procedures/Procedures";
+import GeneralServices from "./pages/generalServices/GeneralServices";
+import GeneralService from "./pages/generalServices/GeneralService";
+
 
 function App() {
   return (
@@ -31,6 +34,8 @@ function App() {
         <Route path="/laws" element={<Laws />} />
         <Route path="/laws/:id" element={<Law />} />
         <Route path="/procedures" element={<Procedures />} />
+        <Route path="/services" element={<GeneralServices/>} />
+        <Route path="/services/:id" element={<GeneralService/>}/>
         <Route path="/contact" element={<ContactInfo />} />
       </Routes>
       <Footer />

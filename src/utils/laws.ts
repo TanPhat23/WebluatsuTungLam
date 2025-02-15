@@ -590,14 +590,14 @@ export const laws = [
 ];
 
 export const index = [
-  {
-    id: "1",
-    title: "ÁN LỆ",
-  },
-  {
-    id: "2",
-    title: "NGHỊ QUYẾT",
-  },
+  // {
+  //   id: "1",
+  //   title: "ÁN LỆ",
+  // },
+  // {
+  //   id: "2",
+  //   title: "NGHỊ QUYẾT",
+  // },
   // {
   //   id: "3",
   //   title: "MỤC 3",

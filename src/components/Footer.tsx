@@ -30,7 +30,7 @@ const Footer = () => {
         <div className="mt-10 flex flex-row gap-10 ">
           <div className="flex flex-col gap-2 items-center">
             <h3 className="text-xl font-bold">HOẠT ĐỘNG HÀNH NGHỀ</h3>
-            <div className="w-1/2 h-[10px] rounded-xl bg-[#122B12] "></div>
+            <div className="w-1/2 h-[10px] rounded-xl bg-[#0052a2] "></div>
             <ul>
               {activities.map((link) => (
                 <li key={link.title}>
@@ -41,7 +41,7 @@ const Footer = () => {
           </div>
           <div className="flex flex-col gap-2 items-center">
             <h3 className="text-xl  font-bold">THỦ TỤC PHÁP LÝ</h3>
-            <div className="w-1/2 h-[10px] rounded-xl bg-[#122B12] "></div>
+            <div className="w-1/2 h-[10px] rounded-xl bg-[#0052a2] "></div>
             <ul>
               {procedures.map((link) => (
                 <li key={link.title}>

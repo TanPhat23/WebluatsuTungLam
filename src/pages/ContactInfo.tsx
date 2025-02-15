@@ -167,13 +167,13 @@ const ContactInfo = () => {
                 ></textarea>
               </div>
               {sendingMail ? (
-                <div className="w-full bg-lime-300 text-xl text-black py-2 rounded-lg flex justify-center gap-4">
+                <div className="w-full bg-[#82C8E5] text-xl text-black py-2 rounded-lg flex justify-center gap-4">
                   <AiOutlineLoading className="animate-spin h-auto w-auto " />
                   <p>Đang gửi mail</p>
                 </div>
               ) : (
                 <button
-                  className="w-full bg-lime-300 text-xl text-black py-2 rounded-lg"
+                  className="w-full bg-[#82C8E5] text-xl text-black py-2 rounded-lg"
                   onClick={handleSendMail}
                 >
                   Gửi tin nhắn

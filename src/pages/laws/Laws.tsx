@@ -29,23 +29,22 @@ const Laws = () => {
       </div>
       <div className="flex flex-row">
         <ul className="flex flex-row gap-2 text-2xl  ">
-          {index.map((item, index) => (
+          {/* {index.map((index) => (
             <li key={index} className="">
               <button
                 onClick={() => handleIndexClick(index)}
                 className="bg-white font-bold border-none focus:outline-none "
               >
-                {item.title}  
                 {selectedIndex === index && (
                   <div className="w-auto h-[3px] bg-[#0052A2] transition ease-linear duration-300"></div>
                 )}
               </button>
             </li>
-          ))}
-          <div className="flex flex-row gap-4 border-2 border-black rounded-xl ml-2 items-center">
+          ))} */}
+          <div className="flex flex-row gap-4 border-2 border-black rounded-xl ml-2 items-center h-14">
             <FaMagnifyingGlass className="ml-2 " />
             <input
-              className="bg-white  mr-2 w-[200px] focus:outline-none "
+              className="bg-white  mr-2 w-[200px] focus:outline-none  "
               onChange={(e) => setSearch(e.target.value)}
               placeholder="Tìm kiếm"
             ></input>
