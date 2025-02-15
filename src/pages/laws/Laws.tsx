@@ -1,5 +1,5 @@
 import React from "react";
-import { index, laws } from "../../utils/laws";
+import { laws } from "../../utils/laws";
 import { FaMagnifyingGlass } from "react-icons/fa6";
 import LawCard from "../../components/law/LawCard";
 

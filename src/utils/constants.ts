@@ -343,3 +343,26 @@ export const activitiesCard: Activity[] = [
     legalServices: "",
   },
 ];
+
+export const RetractBarConst = [
+  {
+    title: "Quốc hội",
+    src: "logo-quoc-hoi.png",
+    href: "quochoi.vn",
+  },
+  {
+    title: "Chinh phủ",
+    src: "quochuy.png",
+    href: "www.chinhphu.vn",
+  },
+  {
+    title: "Tòa án nhân dân tối cao",
+    src: "supreme-logo-vietnam-judicial-system-of-vietnam-constitution-of-vietnam-supreme-peoples-court-of-vietnam-law-ministry-of-justice-of-vietnam-legal-transaction-png-clipart-thumbnail.png",
+    href: "www.toaan.gov.vn",
+  },
+  {
+    title: "Thành phố Hồ Chí Minh",
+    src: "HCM.jpg",
+    href: "hochiminhcity.gov.vn",
+  },
+];

@@ -1,9 +1,7 @@
-import React from "react";
 import ServiceCard from "../../components/generalService/ServiceCard";
 import { servicesCard } from "../../utils/services";
 
 const GeneralServices = () => {
-  const [selectedIndex, setSelectedIndex] = React.useState(0);
 
   return (
     <div className="flex flex-col gap-16 min-h-screen items-center text-center mx-5">

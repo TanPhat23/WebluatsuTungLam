@@ -2,3 +2,17 @@ hr {
   height: 0.15rem;
   background-color: black;
 }
+
+/* Add this to your CSS file or use a CSS-in-JS solution */
+.retract-content {
+  width: 0;
+  opacity: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: width 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.retract-content.expanded {
+  width: 200px; 
+  opacity: 1;
+}
