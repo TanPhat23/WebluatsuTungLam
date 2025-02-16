@@ -5,7 +5,7 @@ const RetractBar = () => {
   const [isRetract, setIsRetract] = React.useState(false);
 
   return (
-    <div className="fixed top-[35vh] border-2 rounded lg border-black">
+    <div className="fixed top-[55vh] border-2 rounded lg border-black">
       <div className="m-2">
         {RetractBarConst.map((item, index) => (
           <div
