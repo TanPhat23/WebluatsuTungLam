@@ -17,7 +17,7 @@ const RetractBar = () => {
             <div
               className={`retract-content ${
                 isRetract ? "expanded" : ""
-              } overflow-hidden transition-all duration-300 ease-in-out transform justify-end text-end font-bold delay-500`}
+              } overflow-hidden transition-all duration-300 ease-in-out transform justify-end text-end font-bold delay-500 text-xs`}
             >
               {isRetract && (
                 <>
@@ -26,7 +26,7 @@ const RetractBar = () => {
                 </>
               )}
             </div>
-            <img src={item.src} alt={item.title} className="h-12 w-12" />
+            <img src={item.src} alt={item.title} className="h-8 w-8" />
           </div>
         ))}
       </div>
