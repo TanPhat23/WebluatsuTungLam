@@ -19,10 +19,6 @@ export const servicesCard = [
 
 export const services = [
   { 
-    id: "business",
-    title: "DỊCH VỤ DOANH NGHIỆP",
-  },
-  { 
     id: "education",
     title: "DỊCH VỤ GIÁO DỤC",
   },

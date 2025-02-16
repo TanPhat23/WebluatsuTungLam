@@ -5,7 +5,7 @@ const RetractBar = () => {
   const [isRetract, setIsRetract] = React.useState(false);
 
   return (
-    <div className="fixed top-[55vh] border-2 rounded lg border-black">
+    <div className="fixed top-[50vh] border-2 rounded lg border-black">
       <div className="m-2">
         {RetractBarConst.map((item, index) => (
           <div
@@ -26,7 +26,7 @@ const RetractBar = () => {
                 </>
               )}
             </div>
-            <img src={item.src} alt={item.title} className="h-8 w-8" />
+            <img src={item.src} alt={item.title} className="h-12 w-12 object-cover"/>
           </div>
         ))}
       </div>
