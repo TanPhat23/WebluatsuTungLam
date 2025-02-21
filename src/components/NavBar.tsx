@@ -19,7 +19,7 @@ const NavBar = () => {
 
   const handleServicesClick = (index: number) => {
     setSelectedLink(index);
-    if (links[index].title === "DỊCH VỤ TỔNG QUÁT") {
+    if (links[index].title === "DỊCH VỤ KHÁC") {
       setIsServicesOpen(!isServicesOpen); 
     } else {
       setIsServicesOpen(false); 
@@ -29,7 +29,7 @@ const NavBar = () => {
   };
   
   return (
-    <nav className="h-[90px] mt-4">
+    <nav className="h-[60px] mt-4">
       <ul className="flex flex-row gap-12 justify-center">
         {links.map((link, index) => (
           <li key={index} className="relative font-bold ">
@@ -40,13 +40,12 @@ const NavBar = () => {
               onClick={() => handleServicesClick(index)}
               aria-current={selectedLink === index ? "page" : undefined}
             >
-              <span className="block">{link.title.split(" ").slice(0, 2).join(" ")}</span>
-              <span className="block">{link.title.split(" ").slice(2).join(" ")}</span>
+              <span className="inline">{link.title}</span>
             </a>
             {selectedLink === index && (
               <div className="w-full h-[4px] rounded-xl bg-[#0052A2] transition duration-1000 ease-linear" />
             )}
-            {link.title === "DỊCH VỤ TỔNG QUÁT" && isServicesOpen && (
+            {link.title === "DỊCH VỤ KHÁC" && isServicesOpen && (
               <div className="absolute mt-2 py-2 w-48 bg-white rounded-xl shadow-xl">
                 {services.map((service) => (
                   <a

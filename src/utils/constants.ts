@@ -2,12 +2,10 @@ import { Activity } from "./type";
 
 export const links = [
   { title: "TRANG CHỦ", path: "/" },
-  { title: "GIỚI THIỆU", path: "/about" },
+  { title: "LUẬT SƯ - CỘNG SỰ", path: "/team" },  
   { title: "HOẠT ĐỘNG HÀNH NGHỀ", path: "/activities" },
-  { title: "LUẬT SƯ CỘNG SỰ", path: "/team" },
   { title: "THỦ TỤC PHÁP LÝ", path: "/procedures" },
-  { title: "TÌM HIỂU PHÁP LUẬT", path: "/laws" },
-  { title: "DỊCH VỤ TỔNG QUÁT", path: "/services" },
+  { title: "DỊCH VỤ KHÁC", path: "/services" },
   { title: "LIÊN HỆ", path: "/contact" },
 ];
 

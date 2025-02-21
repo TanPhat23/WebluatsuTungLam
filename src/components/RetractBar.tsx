@@ -17,7 +17,7 @@ const RetractBar = () => {
             <div
               className={`retract-content ${
                 isRetract ? "expanded" : ""
-              } overflow-hidden transition-all duration-300 ease-in-out transform justify-end text-end font-bold delay-500 text-xs`}
+              } overflow-hidden transition-all duration-300 ease-in-out transform justify-end text-end font-bold delay-500 text-sm pr-2`}
             >
               {isRetract && (
                 <>
