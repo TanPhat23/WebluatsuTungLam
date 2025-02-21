@@ -6,7 +6,7 @@ const GeneralServices = () => {
   return (
     <div className="flex flex-col gap-16 min-h-screen items-center text-center mx-5">
       <div className="flex flex-col items-center gap-4 mt-6 font-semibold">
-        <h1 className="font-bold">DỊCH VỤ TỔNG QUÁT</h1>
+        <h1 className="font-bold">DỊCH VỤ KHÁC</h1>
         <div className="w-1/2 h-[10px] rounded-xl bg-[#0052A2]" />
       </div>
       <div className="flex flex-col items-center text-center gap-4 mt-16">

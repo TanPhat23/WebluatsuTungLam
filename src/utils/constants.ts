@@ -2,8 +2,8 @@ import { Activity } from "./type";
 
 export const links = [
   { title: "TRANG CHỦ", path: "/" },
+  { title: "LUẬT SƯ - CỘNG SỰ", path: "/team" },  
   { title: "HOẠT ĐỘNG HÀNH NGHỀ", path: "/activities" },
-  { title: "LUẬT SƯ CỘNG SỰ", path: "/team" },
   { title: "THỦ TỤC PHÁP LÝ", path: "/procedures" },
   { title: "DỊCH VỤ KHÁC", path: "/services" },
   { title: "LIÊN HỆ", path: "/contact" },
