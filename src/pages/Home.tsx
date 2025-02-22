@@ -48,18 +48,7 @@ const Home = () => {
         </div>
         <div>images</div>
       </div>
-      <div className="flex flex-row gap-4">
-        <div>images</div>
-        <div>
-          <p>text</p>
-          <h1>title</h1>
-          <p>Description</p>
-          <button className="transition text-black hover:ease-in duration-200 hover:scale-110  bg-white border-2 border-[#064273]">
-            button
-          </button>
-        </div>
-      </div>
-      <div className="flex flex-col items-center text-center gap-4 font-bold">
+      <div className="flex flex-col items-center text-center gap-4 font-bold mt-3">
         <h1>Short heading here</h1>
         <button className="text-black bg-white border-2 border-[#064273] font-bold">
           ĐẶT LỊCH HẸN

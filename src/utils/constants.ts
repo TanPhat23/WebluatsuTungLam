@@ -364,3 +364,19 @@ export const RetractBarConst = [
     href: "https://hochiminhcity.gov.vn/",
   },
 ];
+
+export const ContactBarConst = [
+  {
+    src: "zalo.png",
+    href: "https://zalo.me/0938571549",
+  },
+  {
+    src : "phone.png",
+    href: "tel:0938571549",
+  },
+  {
+    src: "email.png",
+    href: "mailto:ls_songtung@yahoo.com",
+  },
+
+];

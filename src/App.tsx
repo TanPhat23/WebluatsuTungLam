@@ -14,6 +14,7 @@ import Procedures from "./pages/procedures/Procedures";
 import GeneralServices from "./pages/generalServices/GeneralServices";
 import GeneralService from "./pages/generalServices/GeneralService";
 import RetractBar from "./components/RetractBar";
+import ContactBar from "./components/ContactBar";
 
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
         <Route path="/contact" element={<ContactInfo />} />
       </Routes>
       <RetractBar/>
+      <ContactBar/>
       <Footer />
     </>
   );
