@@ -1,4 +1,3 @@
-import React from "react";
 import { ContactBarConst } from "../utils/constants";
 
 const ContactBar = () => {
