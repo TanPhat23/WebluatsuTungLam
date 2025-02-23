@@ -18,8 +18,8 @@ export const servicesCard = [
 ];
 
 export const services = [
-  { 
-    id: "education",
-    title: "DỊCH VỤ GIÁO DỤC",
-  },
+  // { 
+  //   id: "education",
+  //   title: "DỊCH VỤ GIÁO DỤC",
+  // },
 ];
