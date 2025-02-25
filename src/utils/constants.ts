@@ -10,27 +10,27 @@ export const links = [
 ];
 
 export const activities = [
-  { title: "Link One", path: "/" },
+  { title: "TƯ VẤN PHÁP LUẬT", path: "/" },
   {
-    title: "Link TWo",
+    title: "THAM GIA TỐ TỤNG",
     path: "/",
   },
-  { title: "Link Three", path: "/" },
+  { title: "ĐẠI DIỆN ỦY QUYỀN", path: "/" },
   {
-    title: "Link Four",
+    title: "DỊCH VỤ PHÁP LUẬT",
     path: "/",
   },
 ];
 
 export const procedures = [
-  { title: "Link Five", path: "/" },
+  { title: "ĐƠN YÊU CẦU GIẢI QUYẾT", path: "/" },
   {
-    title: "Link Six",
+    title: "THỦ TỤC ĐĂNG KÝ",
     path: "/",
   },
-  { title: "Link Seven", path: "/" },
+  { title: "THỦ TỤC KHỞI KIỆN", path: "/" },
   {
-    title: "Link Eight",
+    title: "TRÌNH TỰ GIẢI QUYẾT",
     path: "/",
   },
 ];
