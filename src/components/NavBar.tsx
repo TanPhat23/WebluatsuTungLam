@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { links } from "../utils/constants";
-import { services } from "../utils/services";
+// import { services } from "../utils/services";
 import { useNavigate } from "react-router-dom";
 
 const NavBar = () => {
@@ -45,7 +45,7 @@ const NavBar = () => {
             {selectedLink === index && (
               <div className="w-full h-[4px] rounded-xl bg-[#0052A2] transition duration-1000 ease-linear" />
             )}
-            {link.title === "DỊCH VỤ KHÁC" && isServicesOpen && (
+            {/* {link.title === "DỊCH VỤ KHÁC" && isServicesOpen && (
               <div className="absolute mt-2 py-2 w-48 bg-white rounded-xl shadow-xl">
                 {services.map((service) => (
                   <a
@@ -59,7 +59,7 @@ const NavBar = () => {
                   </a>
                 ))}
               </div>
-            )}
+            )} */}
           </li>
         ))}
       </ul>
